@@ -1,3 +1,10 @@
+/* Global Styles */
+
+  
+html {
+    scroll-behavior: smooth;
+  }
+  
 body {
     font-family: sans-serif;
     background-color: #191919;
@@ -17,7 +24,7 @@ body {
     left: 0;
     width: 100%;
     height: 50px;
-    background-color: rgb(255, 145, 0);
+    background-color: rgb(255, 255, 255);
     padding-bottom: 10px;
     margin-bottom: 50px;
 }
@@ -27,32 +34,24 @@ body {
     font-size: 20px;
     top: 25%;
     left: 8%;
-    color: rgb(255, 255, 255);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(34, 34, 34);
+    font-family: Manrope;
 }
 
-#buttons {
-    position: absolute;
-    top: 25%;
-    right: 5%;
-    background-color: rgb(255, 145, 0);
-}
 
 .buttonnav {
     font-size: 15px;
     border: 0px;
-    background-color: rgb(255, 145, 0);
+    background-color: Transparent;
     border-radius: 5px;
     color: rgb(112, 112, 112);
 }
 
-
-/*Image*/
-.image {
-    position: absolute;
-    top: 20%;
-    left: 10%;
+.buttonnav:hover{
+    color: rgb(0, 0, 0);
 }
+
+
 
 /*Text*/
 .text {
@@ -61,11 +60,12 @@ body {
     top: 28%;
     right: 10%;
     width: 600px;
+    font-family: Manrope;
 
 }
 
 #text_h {
-    font-family: "Franklin Gothic Medium";
+    font-family: Manrope;
 }
 
 button:hover {
@@ -83,6 +83,8 @@ button:active {
     background-image:url(./Hero.jpg) ;
     background-size: cover;
     background-position: center;
+
+    
 }
 
 .content{
@@ -97,16 +99,25 @@ h1{
     font-size: 75pt;
     transition: opacity 0.3s;
     opacity: 1;
+    font-family: Manrope;
 }
 h1:hover{
     transition: opacity 0.2s;
     opacity: 0.2;
 }
+h5{
+    color:rgb(3, 3, 3);
+    margin: -15px 1px -10px;
+    font-size: 25px;
+    font-style: italic;
+    font-family: Manrope;
+}
 h3{
     color:rgb(3, 3, 3);
-    margin: -15px 0px 5px;
+    margin: -15px 0px -10px;
     font-size: 35px;
     font-style: italic;
+    font-family: Manrope;
 }
 h3:hover{
     transition: opacity 0.2s;
@@ -117,6 +128,7 @@ h4{
     color:rgb(78, 78, 78);
     margin-bottom: 2px;
     font-size: 30px;
+    font-family: Manrope;
 }
 
 .about{
@@ -125,13 +137,9 @@ h4{
     background-color: #191919;
 }
 
-.about img{
-    width: 430px;
-    height: auto;
-}
-
 .about-text{
     width: 550px;
+    font-family: Manrope;
 }
 
 .main{
@@ -148,6 +156,7 @@ h4{
     font-size: 75px;
     text-transform: capitalize;
     margin-bottom: 20px;
+    font-family: Manrope;
 }
 
 .about-text h5{
@@ -156,6 +165,7 @@ h4{
     font-size: 22px;
     margin-bottom: 25px;
     text-transform: capitalize;
+    font-family: Manrope;
 }
 
 .about-text p{
@@ -164,6 +174,7 @@ h4{
     line-height: 28px;
     font-size: 18px;
     margin-bottom: 45px;
+    font-family: Manrope;
 }
 
 .abtbutton{
@@ -207,6 +218,7 @@ footer>p{
 .Skills>h2{
     color: white;
     font-size: 1.5rem;
+    font-family: Manrope;
   }
   
 .big-words-container {
@@ -237,40 +249,13 @@ footer>p{
     background-color: #191919;
 }
 
-.education img{
-    height: auto;
-    width: 80%;
-    padding: 1px 50px;
-    position:static;
-    top:50%;
-    left: -20%;
-}
 
 .about-text{
     width: 550px;
+    font-family: Manrope;
 }
 
-/* Experince Code */
-.Experience {
-    text-align: center;
-    background-color: #202020;
-    height: 300px;
-    padding: 100px 0px;
-  }
 
-.Experience>h2{
-    color: white;
-    font-size: 1.5rem;
-    padding: 1px 50px;
-  }
-  
-.big-words-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-  }
-  
   .video-section {
     position: relative;
   }
@@ -322,4 +307,58 @@ footer>p{
   .button:hover{
     background-color: rgb(255, 145, 0);
     transition: 1s;
+  }
+
+  @media (max-width: 1300px) {
+    #fixed-nav-bar {
+       
+      }
+
+    #logo {
+       display: none;
+    }
+
+    .buttonnav {
+        font-size: 1.5vh;
+        border: 0px;
+        background-color: Transparent;
+        border-radius: 5px;
+        color: rgb(112, 112, 112);
+        position: relative;
+        top: 40%;
+        left: 55%;
+        
+    }
+
+      h1{
+        color:rgb(255, 145, 0);
+        margin: 0px -8px 5px;
+        font-size: 5vh;
+        transition: opacity 0.3s;
+        opacity: 1;
+        font-family: Manrope;
+    }
+    
+    h5{
+        color:rgb(3, 3, 3);
+        margin: -15px -1vh -10px;
+        font-size: 2.5vh;
+        font-style: italic;
+        font-family: Manrope;
+    }
+
+    .hero{
+        height:100vh;
+        width: 100vh;
+        background-image:url(./Hero.jpg) ;
+        background-size: cover;
+        background-position: -50vmax;
+        position: relative;
+    }
+
+    .about{
+        width: 50vh;
+        padding: 100px 0px;
+        background-color: #191919;
+    }
   }

@@ -1,110 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Manrope"
+		/>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<title>Sachin Dewthuru</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <title>Sachin Dewthuru</title>
-</head>
+	<body>
+		<div class="container">
+			<div class="hero">
+				<nav id="fixed-nav-bar">
+					<div id="logo">Sachin Dewthuru</div>
+					<div id="buttons">
+						<button id="Home" class="buttonnav">Home</button>
+						<button id="About" class="buttonnav">About</button>
+						<button id="Skills" class="buttonnav">Skills</button>
+						<button id="Education" class="buttonnav">
+							Education
+						</button>
+						<button id="Experience" class="buttonnav">
+							Experience
+						</button>
+						<button id="Experience" class="buttonnav">
+							Projects
+						</button>
+					</div>
+				</nav>
+			</div>
+			<div class="content">
+				<h5>Howdy, I'm</h5>
+				<h1>Sachin Dewthuru</h1>
+			</div>
 
-<body>
-    <div class="container">
-        <div class="hero">
-            <nav id="fixed-nav-bar">
-                <div id="logo">Sachin Dewthuru</div>
-                <div id="buttons">
-                    <button id="Home" class="buttonnav">Home</button>
-                    <button id="About" class="buttonnav">About</button>
-                    <button id="Skills" class="buttonnav">Skills</button>
-                    <button id="Education" class="buttonnav">Education</button>
-                    <button id="Experience" class="buttonnav">Experience</button>
-                    <button id="Experience" class="buttonnav">Projects</button>
-                </div>
-            </nav>
-        </div>
-        <div class="content">
-            <h1>Sachin Dewthuru</h1>
-            <h3>I'm a 3D Generalist and Frontend developer.</h3>
-        </div>
+			<!----ABOUT SECTION START-->
 
-        <!----ABOUT SECTION START-->
+			<section class="about">
+				<div class="main">
+					<div class="about-text">
+						<h2>About Me</h2>
+						<h5>Developer <span>& Designer</span></h5>
+						<p>
+							Hello there! I'm a multi-talented individual with a
+							passion for all things technology and design. I
+							specialize in 3D modeling, animation, and frontend
+							development, which allows me to bring a unique
+							perspective to any digital project. <br /><br />
 
-        <section class="about">
-            <div class="main">
-                <img src="./Hope.jpg">
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <h5>Developer <span>& Designer</span></h5>
-                    <p>Hello there! I'm a multi-talented individual with a passion for all things technology and design.
-                        I specialize in 3D modeling, animation, and frontend development, which allows me to bring a
-                        unique perspective to any digital project.
-                        <br><br>
+							I am driven by a desire to create engaging, visually
+							stunning digital experiences that make a lasting
+							impression on users. I am excited to continue my
+							journey in this ever-evolving field and am always
+							open to new opportunities and collaborations.
+						</p>
+						<button class="abtbutton">Let's Talk</button>
+					</div>
+				</div>
+			</section>
 
-                        I am driven by a desire to create engaging, visually stunning digital experiences that make a
-                        lasting impression on users.
-                        I am excited to continue my journey in this ever-evolving field and am always open to new
-                        opportunities and collaborations.
-                    </p>
-                    <button class="abtbutton">Let's Talk</button>
-                </div>
-            </div>
-        </section>
-        <!----Expertise SECTION START-->
-        <section class="Skills">
-            <h2>Expertise</h2>
-            <div class="big-words-container">
-                <div class="big-word">ReactJS</div>
-                <div class="big-word">3D Animation</div>
-                <div class="big-word">UI/UX Development</div>
-            </div>
-        </section>
-
-        <!----Education Section-->
-        <section class="education">
-            <div class="main">
-                <img src="./Edu.jpg">
-                <div class="about-text">
-                    <h2>Education Qualifications</h2>
-                    <h5>Undergratue software engineer</span></h5>
-                    <p>The Department of Information and Communication Technology (ICT) conducts the Bachelor of
-                        Information and Communication Technology (BICT) Honours Degree Program.
-                        The primary focus of the ICT department is to produce skillful, knowledgeable,
-                        and competent ICT graduates who can cater to the demand for Computing and IT-related professions
-                        across boundaries.</p>
-                    <button class="abtbutton">Let's Talk</button>
-                </div>
-            </div>
-        </section>
-        <!----Experince Section-->
-        <section class="Experience">
-            <h2>Experience in following fields</h2>
-            <div class="big-words-container">
-                <img src="./FTT.png" width="200" height=auto>
-                <img src="./Fiverr.png" width="200" height=auto>
-                <img src="./kodex.png" width="200" height=auto>
-            </div>
-        </section>
-        <!----Projects Section-->
-        <section class="video-section">
-            <video autoplay muted loop>
-                <source src="./videoS.mp4" type="video/mp4">
-            </video>
-            <div class="video-overlay"></div>
-            <div class="video-content">
-                <div class="button-container">
-                    <a href="https://github.com/RaZOr519/">
-                        <button class="button">GitHub</button></a>
-                    <a href="https://www.behance.net/sachin-dewthuru">
-                        <button class="button">Behance</button></a>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <p class="end">Copyright by Sachin Dewthuru @ 2023</p>
-        </footer>
-    </div>
-</body>
-
+			<footer>
+				<p class="end">Copyright by Sachin Dewthuru @ 2023</p>
+			</footer>
+		</div>
+	</body>
 </html>
