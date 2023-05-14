@@ -348,6 +348,12 @@ main {
   transition: var(--transition-2);
 }
 
+.sidebar:hover {
+  overflow: hidden;
+  border-color: #444446;
+  transform: scale(1.05);
+}
+
 .sidebar.active {
   max-height: 405px;
 }
@@ -371,6 +377,10 @@ main {
   font-weight: var(--fw-500);
   letter-spacing: -0.25px;
   margin-bottom: 10px;
+}
+
+.info-content .name:hover {
+  color: var(--orange-yellow-crayola);
 }
 
 .info-content .title {
@@ -506,6 +516,12 @@ main {
   z-index: 5;
 }
 
+.navbar:hover {
+  box-shadow: var(--shadow-1);
+  background-color: #252526;
+  z-index: 5;
+}
+
 .navbar-list {
   display: flex;
   flex-wrap: wrap;
@@ -580,13 +596,15 @@ main {
   border-radius: 14px;
   box-shadow: var(--shadow-2);
   z-index: 1;
+  transition: 0.5s;
 }
 
 
 .service-item:hover {
   position: relative;
   background: #e8c866;
-
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 
 .service-item::before {
