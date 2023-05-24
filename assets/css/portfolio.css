@@ -1239,6 +1239,7 @@ article.active {
 }
 
 
+
 .App {
   display: flex;
   flex-direction: column;
@@ -1248,6 +1249,7 @@ article.active {
   background-color: #272727;
   position: relative;
   /* Add position: relative to .App */
+
 }
 
 .App-header {
@@ -1277,10 +1279,35 @@ article.active {
   /* Add padding to create space */
 }
 
+@keyframes fadeInMenu {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .App-menu-item {
-  margin: 0.3rem 0;
+  margin: 0.2rem 0;
   font-weight: bold;
   color: #ffffff;
+  transition: all 0.3s ease;
+  animation: fadeInMenu 1s ease-out forwards;
+}
+
+.App-menu-item:hover {
+  margin: 0.8rem 0;
+  font-weight: bold;
+  color: #d4d4d4;
+  transition: all 0.3s ease;
+  background-color: #141414;
+  border-radius: 0.2rem;
+  padding: 0.4rem;
+
 }
 
 .Name {
@@ -1298,12 +1325,33 @@ article.active {
   list-style-type: none;
 }
 
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .name-menu-item {
+
+  opacity: 0;
   margin: 0.1rem 0;
   font-weight: bold;
   color: #ffffff;
   list-style-type: none;
+  animation: fadeIn 0.5s ease-in-out forwards;
 
+}
+
+.name-menu-item:hover {
+  color: #868686;
 }
 
 .name-menu-item_1 {
@@ -1313,6 +1361,7 @@ article.active {
   list-style-type: none;
   position: absolute;
   top: 2.5rem;
+  animation: fadeIn 1.5s ease-in-out forwards;
 }
 
 .circle-fill {
@@ -1320,26 +1369,27 @@ article.active {
   height: 30rem;
   border-radius: 50%;
   background-color: rgb(82, 82, 82);
+  transition: all 1s ease;
 }
 
 .circle-fill:hover {
-  width: 29.8rem;
-  height: 29.8rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
   background-color: #272727;
   border: 0.2rem solid;
-  border-color: rgb(82, 82, 82);
+  border-color: rgb(54, 54, 54);
+  transition: all 0.3s ease;
 
-
-}
-
-.circle-fill:hover+.circle-stroke {
-  width: 30rem;
-  height: 30rem;
-  border-radius: 50%;
-  background-color: rgb(82, 82, 82);
+  .circle-text {
+    opacity: 1;
+    transition: all 0.8s ease;
+  }
 
 }
+
+
+
 
 .circle-stroke {
   width: 30rem;
@@ -1348,39 +1398,43 @@ article.active {
   background-color: #272727;
   border: 0.2rem solid;
   border-color: rgb(82, 82, 82);
+  transition: all 1s ease;
 
 }
 
 .circle-stroke:hover {
-  width: 30rem;
-  height: 30rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
-  background-color: rgb(82, 82, 82);
+  background-color: rgb(51, 51, 51);
+  transition: all 0.3s ease;
 
+  .circle-text {
+    opacity: 1;
+    transition: all 0.8s ease;
+  }
 }
 
-.circle-stroke:hover+.circle-fill {
-  width: 29.8rem;
-  height: 29.8rem;
-  border-radius: 50%;
-  background-color: #272727;
-  border: 0.2rem solid;
-  border-color: rgb(82, 82, 82);
-
+.circle-text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.8s ease;
 }
 
 
 .App-body {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 0rem;
 }
 
-.App-body {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-}
+
 
 @media (max-width: 768px) {
   .App-body {
