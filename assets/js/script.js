@@ -158,13 +158,3 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  var follower = document.getElementById("follower");
-  document.addEventListener("mousemove", function (event) {
-    var xPos = event.clientX;
-    var yPos = event.clientY;
-
-    follower.style.left = xPos + "px";
-    follower.style.top = yPos + "px";
-  });
-});

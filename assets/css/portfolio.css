@@ -1239,15 +1239,18 @@ article.active {
 }
 
 
-
 .App {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #272727;
+  background-image: url("../images/bg.jpg");
+
+  background-size: cover;
+  background-position: center;
   position: relative;
+
   /* Add position: relative to .App */
 
 }
@@ -1376,7 +1379,7 @@ article.active {
   width: 20rem;
   height: 20rem;
   border-radius: 50%;
-  background-color: #272727;
+  background-color: #27272700;
   border: 0.2rem solid;
   border-color: rgb(54, 54, 54);
   transition: all 0.3s ease;
@@ -1395,7 +1398,7 @@ article.active {
   width: 30rem;
   height: 30rem;
   border-radius: 50%;
-  background-color: #272727;
+  background-color: #27272700;
   border: 0.2rem solid;
   border-color: rgb(82, 82, 82);
   transition: all 1s ease;
